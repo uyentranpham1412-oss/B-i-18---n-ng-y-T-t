@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="mouse-glow" id="mouseGlow"></div>
+<header>
+<div class="banner">
+      <h1>Món Ăn Ngày Tết Đặc Trưng Trong Mâm Cỗ Truyền Thống Việt Nam</h1>
+      <h2> Ẩm thực ngày Tết Việt Nam mang đậm bản sắc văn hóa của cả ba miền Bắc – Trung – Nam, thể hiện ước vọng về may mắn, sung túc và sum vầy. Mỗi miền có những món ăn đặc trưng riêng, dù khác nhau về hương vị và cách chế biến, các món ăn ngày Tết đều gắn liền với truyền thống gia đình và lòng biết ơn tổ tiên. Ẩm thực Tết vì thế không chỉ là món ngon mà còn là nét đẹp văn hóa lâu đời của dân tộc Việt Nam.</h2>
+</div>
+
+<div class="slogan">
+<div class="row">
+   <div class="block_3"><h2>Miền Bắc</h2><p>Thanh đạm – hài hòa – tinh tế – truyền thống</p></div>
+   <div class="block_3"><h2>Miền Trung</h2><p>Đậm đà – mặn mà – cay nồng – giản dị</p></div>
+   <div class="block_3"><h2>Miền Nam</h2><p>Ngọt béo – phóng khoáng – ấm áp – lạc quan</p></div>
+</div>
+</div>
+</header>
+
+<table>
+   <tr>
+   <td class="cell_text">
+   <h3>Ẩm thực ngày Tết miền Bắc có hương vị thanh đạm, hài hòa, tinh tế và đậm nét truyền thống.</h3>
+   <ul>
+      <li>Bánh chưng</li>
+      <li>Gà luộc</li>
+      <li>Thịt đông</li>
+      <li>Canh bóng thả</li>
+   </ul>
+   <a href="Miền bắc.html">Chi tiết</a>
+   </td>
+   <td class="cell_img"><img src="img/Miền bắc.jpg" class="img"></td>
+   </tr>
+   <tr>
+   <td class="cell_img"><img src="img/mâm cơm miền Trung.jpg" class="img"></td>
+   <td class="cell_text">
+   <h3>Ẩm thực ngày Tết miền Trung mang hương vị đậm đà, mặn mà, đôi khi cay nồng, phản ánh sự giản dị và bền bỉ.</h3>
+   <ul>
+      <li>Bánh tét</li>
+      <li>Thịt heo ngâm mắm</li>
+      <li>Tôm chua</li>
+      <li>Canh măng khô</li>
+   </ul>
+   <a href="Miền trung.html">Chi tiết</a>
+   </td>
+   </tr>
+   <tr>
+   <td class="cell_text">
+   <h3>Ẩm thực ngày Tết miền Nam có hương vị ngọt béo, phóng khoáng và ấm áp, thể hiện tinh thần lạc quan của người dân.</h3>
+   <ul>
+      <li>Bánh tét (lá cẩm, nhân chuối)</li>
+      <li>Thịt kho tàu</li>
+      <li>Củ kiệu tôm khô</li>
+      <li>Canh khổ qua</li>
+   </ul>
+   <a href="Miền nam.html">Chi tiết</a>
+   </td>
+   <td class="cell_img"><img src="img/mam-co-Tet-mien-Nam-2431-1612259378.jpg" class="img"></td>
+   </tr>
+</table>
+ <footer>
+   <div class="row">
+   <div style="width:60%">
+   <ul>
+      <li>Lớp: 12A09</li>
+      <li>Tên: Trần Phạm Phương Uyên</li>
+      <li>Website: <a href="Trangchu.html" class="link">Trang chủ</a></li>
+   </ul>
+   </div>
+   <div style="width:10%"></div>
+   <div style="width:30%">
+<p>Xem chi tiết:</p>
+   <ul>
+      <li><a href="Miền bắc.html" class="link">Miền Bắc</a></li>
+      <li><a href="Miền trung.html" class="link">Miền Trung</a></li>
+      <li><a href="Miền nam.html" class="link">Miền Nam</a></li>
+   </ul>
+   </div>
+   </div>
+</footer>
+<!-- nút cuộn mũi tên-->
+<button id="backToTop" title="Lên đầu trang">↑</button>
+<script>
+const backToTop = document.getElementById("backToTop");
+
+window.onscroll = function () {
+    if (document.documentElement.scrollTop > 200) {
+        backToTop.style.display = "block";
+    } else {
+        backToTop.style.display = "none";
+    }
+};
+
+backToTop.onclick = function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+};
+</script>
+<script>
+const glow = document.getElementById("mouseGlow");
+
+document.addEventListener("mousemove", function(e) {
+    glow.style.left = e.clientX + "px";
+    glow.style.top = e.clientY + "px";
+});
+</script>
+
+<!--hết-->
+</body>
+</html>
